@@ -23,7 +23,7 @@ const customStyles = {
   }),
   menu: (provided) => ({
     ...provided,
-    marginTop: '-30px',
+    marginTop: '-20px',
   }),
   option: (provided, state) => ({
     ...provided,
