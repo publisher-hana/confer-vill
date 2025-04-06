@@ -36,7 +36,7 @@ header{
         display: inline-block;
         width: 26px;
         height: 26px;
-        @include ico-bg2();
+        background:url('/ico_comm_v2.png') no-repeat;
         background-position: -60px -90px;
         vertical-align: middle;
         margin-right: 4px;
@@ -170,11 +170,13 @@ footer{
         text-transform:uppercase;
         &::after{
           content: "";
-          @include align-center;
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
           right:12px;
           width: 10px;
           height: 10px;
-          @include ico-bg();
+          background:url('/ico_comm.gif') no-repeat;
           background-position: -50px -677px;
         }
       }
@@ -289,7 +291,9 @@ footer{
       left: 0;
       width: 70px;
       height: 32px;
-      @include flex(row,center,center);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-weight: bold;
       color: #fff;
       background-color: var(--primary-color);
@@ -364,14 +368,28 @@ footer{
           color: var(--text-gray);
         }
         button{
-          @include button-style(var(--skyblue-color),#fff,var(--skyblue-color),106px,38px);
+          min-width: 106px;
+          height: 38px;
+          background-color: var(--skyblue-color);
+          color: var(--skyblue-color);
+          font-size: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
           &.close{
-            @include button-style(#ccd1da,#fff,#ccd1da,106px,38px);
+            background-color: #ccd1da;
+            color: #fff;
+            border:1px solid #ccd1da;
           }
           &.e-test{
-            @include button-style(#fff,#ff3d3d,#ff3d3d,106px,38px);
+            background-color: #fff;
+            color: #ff3d3d;
+            border:1px solid #ff3d3d;
             &.off{
-              @include button-style(#fff,#ccd1da,#ccd1da,106px,38px);
+              background-color: #fff;
+              color: #ccd1da;
+              border:1px solid #ccd1da;
             }
           }
         }
@@ -402,7 +420,9 @@ footer{
 
 .board-cont{
   .board-header{
-    @include flex(row,space-between, flex-end);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 40px;
     border-top: 2px solid #000;
     border-bottom: 1px solid var(--bd-color);

@@ -52,7 +52,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  @include ico-bg2();
+  background:url('/ico_comm.gif') no-repeat;
   background-position: -20px -220px;
 }
 .archives{
@@ -63,7 +63,12 @@
       gap:4px;
       a{
         max-width: 877px;
-        @include ellipsis(1);
+        overflow:hidden; 
+        text-overflow:ellipsis; 
+        display: -webkit-box;
+        word-break: keep-all;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
       }
     }
   }

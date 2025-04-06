@@ -1,6 +1,5 @@
 
-@import './base';
-@import './mixin';
+@use './base';
 /*ciya trip*/
 :root{
   --primary-color: #3DD1D5;
@@ -10,6 +9,8 @@
   --header-h:80px;
   --cont-w:1200px;
   --fl-gap:10px;
+  --ico-collect1:'/ico_comm.gif';
+  --ico-collect2:'/ico_comm_v2.png';
 }
 .txt-gray{
   color: var(--text-gray);
@@ -35,6 +36,7 @@
   justify-content: space-between;
   gap:(var(--fl-gap));
 }
+
 /*grid*/
 .grid{
   display: grid;
@@ -60,7 +62,9 @@
   background-color: var(--btn-bg-color,var(--primary-color));
   color: var(--f-color,#fff);
   font-size: 14px;
-  @include flex(row,center,center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 3px;
   &.line{
     --btn-bg-color:#fff;
