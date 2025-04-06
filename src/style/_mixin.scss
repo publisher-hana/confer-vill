@@ -34,10 +34,10 @@
   transform: translateY(-50%);
 }
 @mixin ico-bg(){
-  background:url('/ico_comm.gif') no-repeat;
+  background:url('/confer-vill/images/ico_comm.gif') no-repeat;
 }
 @mixin ico-bg2(){
-  background:url('/ico_comm_v2.png') no-repeat;
+  background:url('/confer-vill/images/ico_comm_v2.png') no-repeat;
 }
 @mixin button-style($bg-color:var(--primary-color),$color:#fff,$bd-color:var(--primary-color),$w:160px,$h:48px){
   min-width: $w;

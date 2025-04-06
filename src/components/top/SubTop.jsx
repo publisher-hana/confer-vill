@@ -7,7 +7,7 @@ const SubTop = ({title,date,rating,labels}) => {
         <div className='container m0 confer-info'>
           <figure>
             <span className='label-dday'>D-10</span>
-            <img src='/logo_dv_0.gif' alt='Dr.ville 컨퍼런스 기본 이미지지'/>
+            <img src='/confer-vill/images/logo_dv_0.gif' alt='Dr.ville 컨퍼런스 기본 이미지지'/>
           </figure>
           <div className='detail'>
             <div className="title-wrap">

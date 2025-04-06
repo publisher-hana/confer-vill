@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <h1>
       <Link to="/">
-        <img src='/logo.png' alt='conference ville' />
+        <img src='/confer-vill/images/logo.png' alt='conference ville' />
       </Link>
     </h1>
   )

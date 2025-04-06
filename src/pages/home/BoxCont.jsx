@@ -6,7 +6,7 @@ const BoxCont = ({title,date,rating,labels}) => {
     <>
       <Link to="conference" className='box-cont confer-info'>
         <figure>
-          <img src='/logo_dv_0.gif' alt='Dr.ville 컨퍼런스 기본 이미지지'/>
+          <img src='/confer-vill/images/logo_dv_0.gif' alt='Dr.ville 컨퍼런스 기본 이미지지'/>
         </figure>
         <div className='detail'>
           <div className="title-wrap">
