@@ -17,6 +17,7 @@ export const brandTabs = [
   {id: 11,category: "한국머크",},
 ]
 
+
 const BrandZone = () => {
   const [selectedCategory, setSelectedCategory] = useState('medicine');
   return (
@@ -75,11 +76,11 @@ const BrandZone = () => {
             <Title title="제품정보"/><span className='skyblue'>54</span>
           </div>
           <div className='products-boxes'>
-            <PrdBox img="./product_01.jpg" cate="순환기" prdTitle="릭시아나" subTitle="항응고제" desc="출혈안전성과 복약편의성 두 가지를 동시에 만족하는 유일한 항응고제" />
-            <PrdBox img="./product_02.jpg" cate="호흡기" prdTitle="에클리라" subTitle="COPD 흡입 치료제 (LAMA)" desc="하루 2회 사용으로 초기 COPD 환자의 24시간 호흡곤란 증상을 개선" />
-            <PrdBox img="./product_03.jpg" cate="소화기" prdTitle="바이오탑에스/바이오탑디/바이오탑하이" subTitle="정장제" desc="균주의 차이는 효과의 차이! 산소 유무에 따라 작용하는 3종 균주 배합" />
-            <PrdBox img="./product_04.jpg" cate="순환기" prdTitle="대웅로수바스타틴" subTitle="COPD 흡입 치료제 (LAMA + LABA)" desc="강력한 LDL-C 강하효과, 죽상동맥경화증 진행지연 적응중" />
-            <PrdBox img="./product_05.jpg" cate="호흡기" prdTitle="듀어클리어" subTitle="고지혈증치료제" desc="하루 2회 사용으로 중등도 이상 COPD 환자의 24시간 호흡곤란 증상을 개선" />
+            <PrdBox img="/confer-vill/images/product_01.jpg" cate="순환기" prdTitle="릭시아나" subTitle="항응고제" desc="출혈안전성과 복약편의성 두 가지를 동시에 만족하는 유일한 항응고제" />
+            <PrdBox img="/confer-vill/images/product_02.jpg" cate="호흡기" prdTitle="에클리라" subTitle="COPD 흡입 치료제 (LAMA)" desc="하루 2회 사용으로 초기 COPD 환자의 24시간 호흡곤란 증상을 개선" />
+            <PrdBox img="/confer-vill/images/product_03.jpg" cate="소화기" prdTitle="바이오탑에스/바이오탑디/바이오탑하이" subTitle="정장제" desc="균주의 차이는 효과의 차이! 산소 유무에 따라 작용하는 3종 균주 배합" />
+            <PrdBox img="/confer-vill/images/product_04.jpg" cate="순환기" prdTitle="대웅로수바스타틴" subTitle="COPD 흡입 치료제 (LAMA + LABA)" desc="강력한 LDL-C 강하효과, 죽상동맥경화증 진행지연 적응중" />
+            <PrdBox img="/confer-vill/images/product_05.jpg" cate="호흡기" prdTitle="듀어클리어" subTitle="고지혈증치료제" desc="하루 2회 사용으로 중등도 이상 COPD 환자의 24시간 호흡곤란 증상을 개선" />
           </div>
           <button className='btn-base line more'>더보기</button>
         </div>

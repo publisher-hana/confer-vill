@@ -5,6 +5,7 @@ import SelectItem from '../../components/common/SelectItem';
 import Aside from '../../components/common/Aside';
 import Visual from '../../components/top/Visual';
 import Title from '../../components/common/Title';
+import '../pages.scss'
 
 export const options = [
   { value: "usa", label: "일시순" },
@@ -28,24 +29,26 @@ const Home = () => {
                 defaultValue={options[0]}
               />
             </div>
-            <BoxCont 
-              title="제 1회 Korea Microbiome Consortium (KMBC) 라이브 심포지엄 (한국표준과학연구원 주관)"
-              date="2022년 7월 3일 (금) 09:00 ~ 17:00"
-              rating="4"
-              labels={['pay', 'closed', 'e-test']} 
-            />
-            <BoxCont 
-              title="2022년 대한심부전학회 개원의 연수강좌 온라인 생중계 "
-              date="2022년 7월 3일 (금) 09:00 ~ 17:00"
-              rating="4"
-              labels={['end']} 
-            />
-            <BoxCont 
-              title="2022년 대한심부전학회 개원의 연수강좌 온라인 생중계 "
-              date="2022년 7월 3일 (금) 09:00 ~ 17:00"
-              rating="4"
-              labels={['end']} 
-            />
+            <div className='box-cont-wrap'>
+              <BoxCont 
+                title="제 1회 Korea Microbiome Consortium (KMBC) 라이브 심포지엄 (한국표준과학연구원 주관)"
+                date="2022년 7월 3일 (금) 09:00 ~ 17:00"
+                rating="4"
+                labels={['pay', 'closed', 'e-test']} 
+              />
+              <BoxCont 
+                title="2022년 대한심부전학회 개원의 연수강좌 온라인 생중계 "
+                date="2022년 7월 3일 (금) 09:00 ~ 17:00"
+                rating="4"
+                labels={['end']} 
+              />
+              <BoxCont 
+                title="2022년 대한심부전학회 개원의 연수강좌 온라인 생중계 "
+                date="2022년 7월 3일 (금) 09:00 ~ 17:00"
+                rating="4"
+                labels={['end']} 
+              />
+            </div>
           </div>
           <Aside />
         </div>

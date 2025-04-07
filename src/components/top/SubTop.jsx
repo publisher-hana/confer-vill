@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../../pages/pages.scss'
 const SubTop = ({title,date,rating,labels}) => {
   return (
     <>
